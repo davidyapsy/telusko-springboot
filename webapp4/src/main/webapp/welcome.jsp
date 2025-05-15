@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Telusko</title>
+</head>
+<body>
+	<a href="register.jsp">Register</a><br>
+	<a href="update.jsp">Update</a><br>
+	<a href="delete.jsp">Delete</a><br>
+</body>
+</html>
