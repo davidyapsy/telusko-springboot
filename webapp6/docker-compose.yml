@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    ports:
+      - "6969:6969"
+    networks: 
+      - crm-network
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: abc123         # <-- Set root password
+      MYSQL_DATABASE: springmvclearning   # <-- Your initial database
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: app123
+    ports:
+      - "3307:3306"
+    networks: 
+      - crm-network
+
+networks:
+  crm-network:
+    driver: bridge
