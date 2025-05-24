@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: webapp1
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+server:
+  port: 6969
